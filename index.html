@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+        <h1>Random Color Generator</h1>
+        <header>
+            <form id="color-form">
+            <label for="seed-color">Select Color
+                <input type="color" id="seed-color" name="seed-color">
+            </label>
+            
+            <label for="color-scheme">Select Color Scheme
+                <select name="color-scheme" id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-Dark</option>
+                    <option value="monochrome-light">Monochrome-Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+            </label>
+    
+            <button type="submit" id="submit-color">Get Colors</button>
+            </form>
+        </header>
+        <main id="color-displayer">
+            <div>
+                <div class="swatch s0"></div>
+                <p class="hex-value h0"></p>
+            </div>
+            
+            <div>
+                <div class="swatch s1"></div>
+                <p class="hex-value h1"></p>
+            </div>
+            
+            <div>
+                <div class="swatch s2"></div>
+                <p class="hex-value h2"></p>
+            </div>
+           
+            <div>
+                <div class="swatch s3"></div>
+                <p class="hex-value h3"></p>
+            </div>
+           
+            <div>
+                <div class="swatch s4"></div>
+                <p class="hex-value h4"></p>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
